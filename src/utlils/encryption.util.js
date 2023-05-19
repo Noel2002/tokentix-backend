@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import ApplicationError from './Errors/ApplicationError.js';
+import otpGenerator from 'otp-generator';
 
 export const generateToken = (payload, expiresIn) =>{
     try {
@@ -20,4 +21,9 @@ export const hashPassword = async (password) => {
 export const comparePassword = async (password, hashedPassword) =>{
     const match = bcrypt.compare(password, hashedPassword);
     return match;
+}
+
+export const generateOTP = ()=>{
+    return otpGenerator.generate(6, { lowerCaseAlphabets : false, upperCaseAlphabets : false, specialChars: false });
+
 }
