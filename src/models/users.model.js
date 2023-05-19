@@ -30,6 +30,10 @@ const UserSchema = new mongoose.Schema({
     },
     photo:{
         type: String
+    },
+    activated:{
+        type: Boolean,
+        default: false
     }
 });
 
