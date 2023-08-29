@@ -1,9 +1,9 @@
 # tokentix-backend
-This application is a web-based ticket sales platform built using Node.js and Express. Its primary purpose is to provide a seamless ticket buying experience for customers, while also providing a range of management tools for event organizers and administrators.
+This is a web service for a web-based ticket sales platform that provides a seamless ticket-buying experience for customers, while also providing a range of management tools for event organizers and administrators. This web service is built using Node.js and Express. It is one of the core component of the platform as it provides authentication services to the users of the platform.
 
 ## Features
 
-The Ticket Sales Application includes the following features:
+This web service for the Ticket Sales Application includes the following features:
 
 - User account management (signup, login, and verification)
 - Email notifications (acccount verification)
